@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MontSina HVAC - Premium Air Conditioning Solutions | Riyadh, KSA</title>
+    <meta name="description" content="Professional HVAC services for homes, businesses, and organizations across Saudi Arabia. Available 24/7 with guaranteed quality and original spare parts.">
+    <meta name="keywords" content="HVAC, air conditioning, AC repair, AC installation, AC maintenance, Riyadh, Saudi Arabia, KSA, 24/7 service">
+    <meta name="author" content="MontSina HVAC">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="MontSina HVAC - Premium Air Conditioning Solutions">
+    <meta property="og:description" content="Professional HVAC services across Saudi Arabia. 24/7 service with guaranteed quality.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://montsina.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#1c4b92">
+    <link rel="manifest" href="#manifest">
+    <link rel="icon" type="image/svg+xml" href="#favicon">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="MontSina HVAC">
+    <link rel="apple-touch-icon" href="#favicon">
+    <style>
+        :root {
+            --primary-bg: #0d0d0d;
+            --secondary-bg: #1a1a1a;
+            --accent-blue: #1c4b92;
+            --light-blue: #d1e2ff;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --shadow: 0 8px 32px rgba(0,0,0,0.3);
+            --card-bg: rgba(255,255,255,0.05);
+            --border: rgba(255,255,255,0.1);
+        }
+        
+        [data-theme="light"] {
+            --primary-bg: #ffffff;
+            --secondary-bg: #f8f9fa;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --card-bg: rgba(0,0,0,0.05);
+            --border: rgba(0,0,0,0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--primary-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(13,13,13,0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-blue);
+        }
+        
+        .logo svg {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-menu a {
+            color: var(--text-primary);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .nav-menu a:hover {
+            background: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+        
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle:hover {
+            background: var(--accent-blue);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="mountains" patternUnits="userSpaceOnUse" width="200" height="200"><path d="M0 200 L50 150 L100 180 L150 120 L200 200 Z" fill="%231c4b92" opacity="0.1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23mountains)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--accent-blue), var(--light-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, var(--accent-blue), #2a5bb8);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(28,75,146,0.4);
+        }
+        
+        .btn-secondary {
+            background: var(--card-bg);
+            color: var(--text-primary);
+            border: 2px solid var(--border);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--accent-blue);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .flashing-phone {
+            animation: flash 2s infinite;
+        }
+        
+        @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+            background: var(--secondary-bg);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(45deg, var(--accent-blue), var(--light-blue));
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .service-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--accent-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .service-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 2000;
+            backdrop-filter: blur(10px);
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: var(--primary-bg);
+            border-radius: 20px;
+            padding: 2rem;
+            max-width: 90vw;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            border: 1px solid var(--border);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .modal-close:hover {
+            background: var(--accent-blue);
+        }
+        
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(28,75,146,0.1);
+        }
+        
+        .service-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .service-checkbox:hover {
+            background: var(--card-bg);
+        }
+        
+        .service-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            accent-color: var(--accent-blue);
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-content {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+        }
+        
+        /* PWA Install Button */
+        .install-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-blue);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .install-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .install-btn.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 80 L50 20 L80 80 Z" fill="#1c4b92"/>
+                    <circle cx="50" cy="40" r="8" fill="#d1e2ff"/>
+                    <path d="M30 70 L70 70" stroke="#d1e2ff" stroke-width="3"/>
+                </svg>
+                MontSina
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">🏠 Home</a></li>
+                <li><a href="#services">🔧 Services</a></li>
+                <li><a href="#about">ℹ️ About</a></li>
+                <li><a href="#team">👥 Team</a></li>
+                <li><a href="#contact">📞 Contact</a></li>
+                <li><a href="#" onclick="openBookingModal()">📅 Book Now</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content container">
+            <h1>MontSina HVAC</h1>
+            <p>Premium Air Conditioning Solutions for Homes, Businesses, and Organizations across Saudi Arabia. Available 24/7 with guaranteed quality and original spare parts.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary" onclick="openBookingModal()">
+                    📅 Book Now
+                </a>
+                <a href="tel:01002717039" class="btn btn-secondary flashing-phone">
+                    📞 Call Now: 01002717039
+                </a>
+                <a href="https://wa.me/0201002717039" class="btn btn-secondary">
+                    💬 WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p style="text-align: center; margin-bottom: 3rem; color: var(--text-secondary);">
+                Professional HVAC solutions for homes, businesses, and organizations across Saudi Arabia
+            </p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">❄️</div>
+                    <h3 class="service-title">AC Installation</h3>
+                    <p class="service-description">Professional air conditioning installation for homes and businesses</p>
+                    <div class="service-price">2500 SAR</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Starting from</p>
+                    <button class="btn btn-primary" onclick="openBookingModal('AC Installation', 2500)">
+                        📅 Book Now!
+                    </button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3 class="service-title">AC Maintenance</h3>
+                    <p class="service-description">Regular maintenance and cleaning services to keep your AC running efficiently</p>
+                    <div class="service-price">350 SAR</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Starting from</p>
+                    <button class="btn btn-primary" onclick="openBookingModal('AC Maintenance', 350)">
+                        📅 Book Now!
+                    </button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3 class="service-title">AC Repair</h3>
+                    <p class="service-description">Fast and reliable AC repair services available 24/7</p>
+                    <div class="service-price">450 SAR</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Starting from</p>
+                    <button class="btn btn-primary" onclick="openBookingModal('AC Repair', 450)">
+                        📅 Book Now!
+                    </button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3 class="service-title">Commercial HVAC</h3>
+                    <p class="service-description">Complete HVAC solutions for businesses and organizations</p>
+                    <div class="service-price">8500 SAR</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Starting from</p>
+                    <button class="btn btn-primary" onclick="openBookingModal('Commercial HVAC', 8500)">
+                        📅 Book Now!
+                    </button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🌪️</div>
+                    <h3 class="service-title">Duct Cleaning</h3>
+                    <p class="service-description">Professional air duct cleaning and sanitization services</p>
+                    <div class="service-price">650 SAR</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Starting from</p>
+                    <button class="btn btn-primary" onclick="openBookingModal('Duct Cleaning', 650)">
+                        📅 Book Now!
+                    </button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🚨</div>
+                    <h3 class="service-title">Emergency Service</h3>
+                    <p class="service-description">24/7 emergency HVAC repair and support services</p>
+                    <div class="service-price">750 SAR</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Starting from</p>
+                    <button class="btn btn-primary" onclick="openBookingModal('Emergency Service', 750)">
+                        📅 Book Now!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeBookingModal()">✕</button>
+            <h2 style="margin-bottom: 2rem; color: var(--accent-blue);">Create Service Contract</h2>
+            
+            <div id="bookingSteps">
+                <!-- Step 1: Service Selection -->
+                <div id="step1" class="booking-step">
+                    <h3>Step 1: Select Services</h3>
+                    <div class="service-checkbox">
+                        <input type="checkbox" id="service1" value="AC Installation" data-price="2500">
+                        <label for="service1">
+                            <strong>AC Installation</strong> - 2500 SAR
+                            <br><small>Professional air conditioning installation for homes and businesses</small>
+                        </label>
+                    </div>
+                    <div class="service-checkbox">
+                        <input type="checkbox" id="service2" value="AC Maintenance" data-price="350">
+                        <label for="service2">
+                            <strong>AC Maintenance</strong> - 350 SAR
+                            <br><small>Regular maintenance and cleaning services</small>
+                        </label>
+                    </div>
+                    <div class="service-checkbox">
+                        <input type="checkbox" id="service3" value="AC Repair" data-price="450">
+                        <label for="service3">
+                            <strong>AC Repair</strong> - 450 SAR
+                            <br><small>Fast and reliable AC repair services</small>
+                        </label>
+                    </div>
+                    <div class="service-checkbox">
+                        <input type="checkbox" id="service4" value="Commercial HVAC" data-price="8500">
+                        <label for="service4">
+                            <strong>Commercial HVAC</strong> - 8500 SAR
+                            <br><small>Complete HVAC solutions for businesses</small>
+                        </label>
+                    </div>
+                    <div class="service-checkbox">
+                        <input type="checkbox" id="service5" value="Duct Cleaning" data-price="650">
+                        <label for="service5">
+                            <strong>Duct Cleaning</strong> - 650 SAR
+                            <br><small>Professional air duct cleaning services</small>
+                        </label>
+                    </div>
+                    <div class="service-checkbox">
+                        <input type="checkbox" id="service6" value="Emergency Service" data-price="750">
+                        <label for="service6">
+                            <strong>Emergency Service</strong> - 750 SAR
+                            <br><small>24/7 emergency HVAC repair services</small>
+                        </label>
+                    </div>
+                    
+                    <div style="margin-top: 2rem; padding: 1rem; background: var(--card-bg); border-radius: 8px;">
+                        <h4>Selected Services Total: <span id="totalAmount">0 SAR</span></h4>
+                    </div>
+                    
+                    <button class="btn btn-primary" onclick="nextStep()" style="margin-top: 1rem;">Next: Customer Information</button>
+                </div>
+                
+                <!-- Step 2: Customer Information -->
+                <div id="step2" class="booking-step" style="display: none;">
+                    <h3>Step 2: Customer Information</h3>
+                    <div class="form-group">
+                        <label class="form-label">Full Name *</label>
+                        <input type="text" id="customerName" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number *</label>
+                        <input type="tel" id="customerPhone" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" id="customerEmail" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Address/Location *</label>
+                        <textarea id="customerAddress" class="form-input" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <input type="checkbox" id="isBusiness" style="margin-right: 0.5rem;">
+                            I'm purchasing as a business
+                        </label>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button class="btn btn-secondary" onclick="prevStep()">Previous</button>
+                        <button class="btn btn-primary" onclick="nextStep()">Next: Schedule</button>
+                    </div>
+                </div>
+                
+                <!-- Step 3: Scheduling -->
+                <div id="step3" class="booking-step" style="display: none;">
+                    <h3>Step 3: Schedule & Notes</h3>
+                    <div class="form-group">
+                        <label class="form-label">Preferred Date</label>
+                        <input type="date" id="preferredDate" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Preferred Time</label>
+                        <select id="preferredTime" class="form-input">
+                            <option value="">Select time</option>
+                            <option value="Morning (8 AM - 12 PM)">Morning (8 AM - 12 PM)</option>
+                            <option value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM - 4 PM)</option>
+                            <option value="Evening (4 PM - 8 PM)">Evening (4 PM - 8 PM)</option>
+                            <option value="Emergency (24/7)">Emergency (24/7)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Additional Notes</label>
+                        <textarea id="additionalNotes" class="form-input" rows="4" placeholder="Any specific requirements or details..."></textarea>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button class="btn btn-secondary" onclick="prevStep()">Previous</button>
+                        <button class="btn btn-primary" onclick="nextStep()">Next: Confirmation</button>
+                    </div>
+                </div>
+                
+                <!-- Step 4: Confirmation -->
+                <div id="step4" class="booking-step" style="display: none;">
+                    <h3>Step 4: Confirmation</h3>
+                    <div id="bookingSummary" style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                        <!-- Summary will be populated by JavaScript -->
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <button class="btn btn-secondary" onclick="prevStep()">Previous</button>
+                        <button class="btn btn-primary" onclick="generatePDF()">📄 Generate PDF</button>
+                        <button class="btn btn-primary" onclick="sendEmail()">📧 Email Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about" style="padding: 5rem 0; background: var(--primary-bg);">
+        <div class="container">
+            <h2 class="section-title">About MontSina</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
+                <div>
+                    <h3 style="color: var(--accent-blue); margin-bottom: 1rem;">Your trusted partner for premium HVAC solutions in Saudi Arabia.</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        MontSina HVAC has been serving the Kingdom of Saudi Arabia with premium air conditioning solutions for homes, businesses, and organizations. Based in Riyadh, we've built our reputation on quality service, original parts, and customer satisfaction.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                        Our team of certified technicians is available 24/7 to ensure your comfort is never compromised. We specialize in installation, maintenance, and repair services using only genuine spare parts backed by comprehensive warranties.
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem;">
+                        <div style="text-align: center; padding: 1rem; background: var(--card-bg); border-radius: 8px;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛡️</div>
+                            <strong>Original Parts</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">We use only genuine spare parts with full warranty.</p>
+                        </div>
+                        <div style="text-align: center; padding: 1rem; background: var(--card-bg); border-radius: 8px;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
+                            <strong>24/7 Support</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">Round-the-clock emergency service available.</p>
+                        </div>
+                        <div style="text-align: center; padding: 1rem; background: var(--card-bg); border-radius: 8px;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💰</div>
+                            <strong>Money Back</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">30-day satisfaction guarantee</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: var(--card-bg); padding: 2rem; border-radius: 16px; border: 1px solid var(--border);">
+                    <h4 style="color: var(--accent-blue); margin-bottom: 1rem;">📍 Service Information</h4>
+                    <div style="margin-bottom: 1rem;">
+                        <strong>Riyadh, Saudi Arabia</strong>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <strong>24/7 Service Available</strong>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <strong>🌍 All KSA Regions Covered</strong>
+                    </div>
+                    <a href="https://maps.google.com/?q=Riyadh,Saudi+Arabia" target="_blank" class="btn btn-primary">
+                        📍 View on Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section style="padding: 5rem 0; background: var(--secondary-bg);">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div style="text-align: center; padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid var(--border);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
+                    <h3 style="color: var(--accent-blue); margin-bottom: 1rem;">All KSA Coverage</h3>
+                    <p style="color: var(--text-secondary);">Serving customers across all regions of Saudi Arabia</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid var(--border);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+                    <h3 style="color: var(--accent-blue); margin-bottom: 1rem;">24/7 Availability</h3>
+                    <p style="color: var(--text-secondary);">Round-the-clock service for emergency repairs.</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid var(--border);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">💳</div>
+                    <h3 style="color: var(--accent-blue); margin-bottom: 1rem;">Pay on Delivery</h3>
+                    <p style="color: var(--text-secondary);">Convenient payment options for your peace of mind.</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid var(--border);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔧</div>
+                    <h3 style="color: var(--accent-blue); margin-bottom: 1rem;">Original Parts</h3>
+                    <p style="color: var(--text-secondary);">Genuine spare parts with manufacturer warranty.</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid var(--border);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">💯</div>
+                    <h3 style="color: var(--accent-blue); margin-bottom: 1rem;">30-Day Guarantee</h3>
+                    <p style="color: var(--text-secondary);">Money-back guarantee on all our services.</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid var(--border);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">👨‍🔧</div>
+                    <h3 style="color: var(--accent-blue); margin-bottom: 1rem;">Expert Team</h3>
+                    <p style="color: var(--text-secondary);">Certified technicians with years of experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" style="padding: 5rem 0; background: var(--primary-bg);">
+        <div class="container">
+            <h2 class="section-title">Our Expert Team</h2>
+            <p style="text-align: center; margin-bottom: 3rem; color: var(--text-secondary);">
+                Meet our certified professionals dedicated to providing exceptional HVAC services
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div style="background: var(--card-bg); border-radius: 16px; padding: 2rem; border: 1px solid var(--border); text-align: center;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">👨‍🔧</div>
+                    <h3 style="color: var(--accent-blue); margin-bottom: 0.5rem;">Ahmed Al-Rashid</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Lead HVAC Technician</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;"><strong>15+ Years Experience</strong></p>
+                    <div style="text-align: left;">
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);"><strong>Specialties:</strong></p>
+                        <ul style="font-size: 0.9rem; color: var(--text-secondary); margin-left: 1rem;">
+                            <li>Commercial HVAC</li>
+                            <li>System Design</li>
+                            <li>Energy Efficiency</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="background: var(--card-bg); border-radius: 16px; padding: 2rem; border: 1px solid var(--border); text-align: center;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">👷‍♂️</div>
+                    <h3 style="color: var(--accent-blue); margin-bottom: 0.5rem;">Mohammed Al-Saud</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Senior Installation Specialist</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;"><strong>12+ Years Experience</strong></p>
+                    <div style="text-align: left;">
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);"><strong>Specialties:</strong></p>
+                        <ul style="font-size: 0.9rem; color: var(--text-secondary); margin-left: 1rem;">
+                            <li>Residential AC</li>
+                            <li>Duct Installation</li>
+                            <li>Maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="background: var(--card-bg); border-radius: 16px; padding: 2rem; border: 1px solid var(--border); text-align: center;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🚨</div>
+                    <h3 style="color: var(--accent-blue); margin-bottom: 0.5rem;">Khalid Al-Otaibi</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Emergency Service Coordinator</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;"><strong>10+ Years Experience</strong></p>
+                    <div style="text-align: left;">
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);"><strong>Specialties:</strong></p>
+                        <ul style="font-size: 0.9rem; color: var(--text-secondary); margin-left: 1rem;">
+                            <li>24/7 Support</li>
+                            <li>Emergency Repairs</li>
+                            <li>Customer Service</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="background: var(--card-bg); border-radius: 16px; padding: 2rem; border: 1px solid var(--border); text-align: center;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🔍</div>
+                    <h3 style="color: var(--accent-blue); margin-bottom: 0.5rem;">Faisal Al-Mutairi</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Quality Control Manager</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;"><strong>8+ Years Experience</strong></p>
+                    <div style="text-align: left;">
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);"><strong>Specialties:</strong></p>
+                        <ul style="font-size: 0.9rem; color: var(--text-secondary); margin-left: 1rem;">
+                            <li>Quality Assurance</li>
+                            <li>Parts Verification</li>
+                            <li>Training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Stats -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div style="text-align: center; padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid var(--border);">
+                    <div style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 0.5rem;">50+</div>
+                    <p style="color: var(--text-secondary);">Years Combined Experience</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid var(--border);">
+                    <div style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 0.5rem;">1000+</div>
+                    <p style="color: var(--text-secondary);">Satisfied Customers</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid var(--border);">
+                    <div style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 0.5rem;">24/7</div>
+                    <p style="color: var(--text-secondary);">Emergency Support</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid var(--border);">
+                    <div style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 0.5rem;">100%</div>
+                    <p style="color: var(--text-secondary);">Certified Technicians</p>
+                </div>
+            </div>
+            
+            <!-- Certifications -->
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid var(--border);">
+                <h3 style="color: var(--accent-blue); margin-bottom: 1rem;">Certifications & Training</h3>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <span style="padding: 0.5rem 1rem; background: var(--accent-blue); color: white; border-radius: 8px;">🏆 KSA Licensed</span>
+                    <span style="padding: 0.5rem 1rem; background: var(--accent-blue); color: white; border-radius: 8px;">🔧 HVAC Certified</span>
+                    <span style="padding: 0.5rem 1rem; background: var(--accent-blue); color: white; border-radius: 8px;">⚡ Safety Trained</span>
+                    <span style="padding: 0.5rem 1rem; background: var(--accent-blue); color: white; border-radius: 8px;">🌟 Quality Assured</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 5rem 0; background: var(--secondary-bg);">
+        <div class="container">
+            <h2 class="section-title">Contact & Booking</h2>
+            <p style="text-align: center; margin-bottom: 3rem; color: var(--text-secondary);">
+                Get in touch with us or create a custom service contract
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem;">
+                <div>
+                    <h3 style="color: var(--accent-blue); margin-bottom: 2rem;">Get In Touch</h3>
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="font-size: 1.5rem;">📞</div>
+                            <div>
+                                <strong>Phone</strong><br>
+                                <a href="tel:01002717039" style="color: var(--accent-blue); text-decoration: none;">01002717039</a>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="font-size: 1.5rem;">💬</div>
+                            <div>
+                                <strong>WhatsApp</strong><br>
+                                <a href="https://wa.me/0201002717039" style="color: var(--accent-blue); text-decoration: none;">0201002717039</a>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="font-size: 1.5rem;">✉️</div>
+                            <div>
+                                <strong>Email</strong><br>
+                                <a href="mailto:amricq@gmail.com" style="color: var(--accent-blue); text-decoration: none;">amricq@gmail.com</a>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="font-size: 1.5rem;">📍</div>
+                            <div>
+                                <strong>Location</strong><br>
+                                <span style="color: var(--text-secondary);">Riyadh, Saudi Arabia</span><br>
+                                <small style="color: var(--text-secondary);">Serving all KSA regions</small>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="openBookingModal()">
+                        📅 Create Service Contract
+                    </button>
+                </div>
+                <div style="background: var(--card-bg); padding: 2rem; border-radius: 16px; border: 1px solid var(--border);">
+                    <h4 style="color: var(--accent-blue); margin-bottom: 1rem;">Quick Message</h4>
+                    <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-input" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-input" rows="4" placeholder="Your message..."></textarea>
+                    </div>
+                    <button class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--primary-bg); padding: 3rem 0; border-top: 1px solid var(--border);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                <div>
+                    <div class="logo" style="margin-bottom: 1rem;">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 30px;">
+                            <path d="M20 80 L50 20 L80 80 Z" fill="#1c4b92"/>
+                            <circle cx="50" cy="40" r="8" fill="#d1e2ff"/>
+                            <path d="M30 70 L70 70" stroke="#d1e2ff" stroke-width="3"/>
+                        </svg>
+                        MontSina
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Premium HVAC solutions for homes, businesses, and organizations across Saudi Arabia. Available 24/7 with guaranteed quality service.
+                    </p>
+                    <div style="color: var(--text-secondary); font-size: 0.9rem;">
+                        <p>📍 Riyadh, Saudi Arabia</p>
+                        <p>🕒 24/7 Service Available</p>
+                        <p>🌍 All KSA Coverage</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-blue); margin-bottom: 1rem;">Quick Links</h4>
+                    <ul style="list-style: none; color: var(--text-secondary);">
+                        <li style="margin-bottom: 0.5rem;"><a href="#home" style="color: var(--text-secondary); text-decoration: none;">Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#services" style="color: var(--text-secondary); text-decoration: none;">Services</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#about" style="color: var(--text-secondary); text-decoration: none;">About Us</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#team" style="color: var(--text-secondary); text-decoration: none;">Our Team</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#contact" style="color: var(--text-secondary); text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-blue); margin-bottom: 1rem;">Contact Info</h4>
+                    <div style="color: var(--text-secondary);">
+                        <p style="margin-bottom: 0.5rem;">📞 Phone: 01002717039</p>
+                        <p style="margin-bottom: 0.5rem;">📱 WhatsApp: 0201002717039</p>
+                        <p style="margin-bottom: 0.5rem;">✉️ Email: amricq@gmail.com</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-blue); margin-bottom: 1rem;">Follow Us</h4>
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                        <a href="https://facebook.com/amricq" target="_blank" style="color: var(--text-secondary); font-size: 1.5rem; transition: color 0.3s ease;" title="Facebook">📘</a>
+                        <a href="https://instagram.com/amricq" target="_blank" style="color: var(--text-secondary); font-size: 1.5rem; transition: color 0.3s ease;" title="Instagram">📷</a>
+                        <a href="https://x.com/amriq" target="_blank" style="color: var(--text-secondary); font-size: 1.5rem; transition: color 0.3s ease;" title="X (Twitter)">🐦</a>
+                        <a href="https://youtube.com/amricq" target="_blank" style="color: var(--text-secondary); font-size: 1.5rem; transition: color 0.3s ease;" title="YouTube">📺</a>
+                        <a href="https://tiktok.com/@amricq" target="_blank" style="color: var(--text-secondary); font-size: 1.5rem; transition: color 0.3s ease;" title="TikTok">🎵</a>
+                    </div>
+                    <div style="background: var(--card-bg); padding: 1rem; border-radius: 8px; text-align: center;">
+                        <h5 style="color: var(--accent-blue); margin-bottom: 0.5rem;">📱 Official Account QR</h5>
+                        <div style="width: 80px; height: 80px; background: var(--border); border-radius: 8px; margin: 0 auto 0.5rem; display: flex; align-items: center; justify-content: center; font-size: 2rem;">
+                            📱
+                        </div>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary);">Scan to connect</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: var(--border); margin: 2rem 0;">
+            <div style="text-align: center; color: var(--text-secondary);">
+                <p style="margin-bottom: 0.5rem;">© 2025 MontSina HVAC. All rights reserved.</p>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem;">KSA registered and legally compliant business with full authority assurance</p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                    <span style="padding: 0.25rem 0.5rem; background: var(--accent-blue); color: white; border-radius: 4px; font-size: 0.8rem;">🏆 KSA Licensed</span>
+                    <span style="padding: 0.25rem 0.5rem; background: var(--accent-blue); color: white; border-radius: 4px; font-size: 0.8rem;">🔧 Certified Technicians</span>
+                    <span style="padding: 0.25rem 0.5rem; background: var(--accent-blue); color: white; border-radius: 4px; font-size: 0.8rem;">🛡️ 30-Day Guarantee</span>
+                    <span style="padding: 0.25rem 0.5rem; background: var(--accent-blue); color: white; border-radius: 4px; font-size: 0.8rem;">⚡ 24/7 Support</span>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-secondary);">
+                    All dates and times are UTC-based, and data may be delayed up to 5:15 minutes. We will respond to your orders as soon as possible. Thanks for your patience.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PWA Install Button -->
+    <button id="installBtn" class="install-btn hidden">📱</button>
+
+    <!-- Pop-up Notice -->
+    <div id="noticeModal" class="modal" style="display: flex;">
+        <div class="modal-content" style="max-width: 500px;">
+            <h3 style="color: var(--accent-blue); margin-bottom: 1rem;">Attention</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                All dates and times are UTC-based, and data may be delayed up to 5:15 minutes. 
+                We will respond to your orders as soon as possible.
+                Thanks for your patience.
+            </p>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                - MontSina<br>
+                - AmrOathman
+            </p>
+            <button class="btn btn-primary" onclick="closeNoticeModal()">I Understand</button>
+        </div>
+    </div>
+
+    <script>
+        // Theme Toggle
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+            
+            if (body.getAttribute('data-theme') === 'light') {
+                body.removeAttribute('data-theme');
+                themeToggle.textContent = '🌙';
+            } else {
+                body.setAttribute('data-theme', 'light');
+                themeToggle.textContent = '☀️';
+            }
+        }
+
+        // Booking Modal Functions
+        let currentStep = 1;
+        let selectedServices = [];
+        let customerInfo = {};
+
+        function openBookingModal(service = null, price = null) {
+            document.getElementById('bookingModal').classList.add('active');
+            
+            if (service && price) {
+                // Auto-select the service if clicked from service card
+                const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.value === service) {
+                        checkbox.checked = true;
+                        updateTotal();
+                    }
+                });
+            }
+        }
+
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.remove('active');
+            resetBookingForm();
+        }
+
+        function resetBookingForm() {
+            currentStep = 1;
+            selectedServices = [];
+            customerInfo = {};
+            
+            // Reset form
+            document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+            document.querySelectorAll('.form-input').forEach(input => input.value = '');
+            document.getElementById('isBusiness').checked = false;
+            
+            // Show step 1
+            showStep(1);
+        }
+
+        function showStep(step) {
+            document.querySelectorAll('.booking-step').forEach(s => s.style.display = 'none');
+            document.getElementById(`step${step}`).style.display = 'block';
+        }
+
+        function nextStep() {
+            if (currentStep === 1) {
+                // Validate service selection
+                const selected = document.querySelectorAll('input[type="checkbox"]:checked');
+                if (selected.length === 0) {
+                    alert('Please select at least one service.');
+                    return;
+                }
+                
+                // Collect selected services
+                selectedServices = Array.from(selected).map(cb => ({
+                    name: cb.value,
+                    price: parseFloat(cb.dataset.price)
+                }));
+            } else if (currentStep === 2) {
+                // Validate customer info
+                const name = document.getElementById('customerName').value;
+                const phone = document.getElementById('customerPhone').value;
+                const address = document.getElementById('customerAddress').value;
+                
+                if (!name || !phone || !address) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+                
+                customerInfo = {
+                    name: name,
+                    phone: phone,
+                    email: document.getElementById('customerEmail').value,
+                    address: address,
+                    isBusiness: document.getElementById('isBusiness').checked
+                };
+            } else if (currentStep === 3) {
+                // Collect scheduling info
+                customerInfo.preferredDate = document.getElementById('preferredDate').value;
+                customerInfo.preferredTime = document.getElementById('preferredTime').value;
+                customerInfo.notes = document.getElementById('additionalNotes').value;
+                
+                // Generate summary
+                generateSummary();
+            }
+            
+            currentStep++;
+            showStep(currentStep);
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                showStep(currentStep);
+            }
+        }
+
+        function updateTotal() {
+            const selected = document.querySelectorAll('input[type="checkbox"]:checked');
+            let total = 0;
+            
+            selected.forEach(cb => {
+                total += parseFloat(cb.dataset.price);
+            });
+            
+            document.getElementById('totalAmount').textContent = total + ' SAR';
+        }
+
+        function generateSummary() {
+            const subtotal = selectedServices.reduce((sum, service) => sum + service.price, 0);
+            const vat = subtotal * 0.15;
+            const total = subtotal + vat;
+            
+            const summary = document.getElementById('bookingSummary');
+            summary.innerHTML = `
+                <h4>Booking Summary</h4>
+                <p><strong>Customer:</strong> ${customerInfo.name}</p>
+                <p><strong>Phone:</strong> ${customerInfo.phone}</p>
+                <p><strong>Email:</strong> ${customerInfo.email || 'Not provided'}</p>
+                <p><strong>Address:</strong> ${customerInfo.address}</p>
+                <p><strong>Type:</strong> ${customerInfo.isBusiness ? 'Business' : 'Residential'}</p>
+                <hr style="margin: 1rem 0; border-color: var(--border);">
+                <h5>Selected Services:</h5>
+                ${selectedServices.map(service => `<p>• ${service.name}: ${service.price} SAR</p>`).join('')}
+                <hr style="margin: 1rem 0; border-color: var(--border);">
+                <p><strong>Subtotal:</strong> ${subtotal} SAR</p>
+                <p><strong>VAT (15%):</strong> ${vat.toFixed(2)} SAR</p>
+                <p><strong>Total:</strong> ${total.toFixed(2)} SAR</p>
+                <hr style="margin: 1rem 0; border-color: var(--border);">
+                <p><strong>Preferred Date:</strong> ${customerInfo.preferredDate || 'Not specified'}</p>
+                <p><strong>Preferred Time:</strong> ${customerInfo.preferredTime || 'Not specified'}</p>
+                ${customerInfo.notes ? `<p><strong>Notes:</strong> ${customerInfo.notes}</p>` : ''}
+            `;
+        }
+
+        function generatePDF() {
+            const subtotal = selectedServices.reduce((sum, service) => sum + service.price, 0);
+            const vat = subtotal * 0.15;
+            const total = subtotal + vat;
+            
+            const content = `
+                MontSina HVAC - Service Contract
+                ======================================
+                
+                Date: ${new Date().toLocaleDateString()}
+                Time: ${new Date().toLocaleTimeString()}
+                
+                Customer Information:
+                ---------------------
+                Name: ${customerInfo.name}
+                Phone: ${customerInfo.phone}
+                Email: ${customerInfo.email || 'Not provided'}
+                Address: ${customerInfo.address}
+                Type: ${customerInfo.isBusiness ? 'Business' : 'Residential'}
+                
+                Selected Services:
+                ------------------
+                ${selectedServices.map(service => `${service.name}: ${service.price} SAR`).join('\n')}
+                
+                Financial Summary:
+                ------------------
+                Subtotal: ${subtotal} SAR
+                VAT (15%): ${vat.toFixed(2)} SAR
+                Total: ${total.toFixed(2)} SAR
+                
+                Scheduling:
+                -----------
+                Preferred Date: ${customerInfo.preferredDate || 'Not specified'}
+                Preferred Time: ${customerInfo.preferredTime || 'Not specified'}
+                Notes: ${customerInfo.notes || 'None'}
+                
+                Terms & Conditions:
+                -------------------
+                • All prices include VAT
+                • Payment on delivery
+                • 30-day money-back guarantee
+                • Original parts warranty
+                • 24/7 emergency support available
+                
+                Contact Information:
+                --------------------
+                MontSina HVAC
+                Phone: 01002717039
+                WhatsApp: 0201002717039
+                Email: amricq@gmail.com
+                Location: Riyadh, Saudi Arabia
+                
+                This contract is valid for 30 days from the date of issue.
+            `;
+            
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `MontSina_Contract_${customerInfo.name.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function sendEmail() {
+            const subtotal = selectedServices.reduce((sum, service) => sum + service.price, 0);
+            const vat = subtotal * 0.15;
+            const total = subtotal + vat;
+            
+            const subject = encodeURIComponent('MontSina HVAC Service Booking Request');
+            const body = encodeURIComponent(`
+Dear MontSina HVAC Team,
+
+I would like to book the following HVAC services:
+
+Customer Information:
+- Name: ${customerInfo.name}
+- Phone: ${customerInfo.phone}
+- Email: ${customerInfo.email || 'Not provided'}
+- Address: ${customerInfo.address}
+- Type: ${customerInfo.isBusiness ? 'Business' : 'Residential'}
+
+Selected Services:
+${selectedServices.map(service => `- ${service.name}: ${service.price} SAR`).join('\n')}
+
+Financial Summary:
+- Subtotal: ${subtotal} SAR
+- VAT (15%): ${vat.toFixed(2)} SAR
+- Total: ${total.toFixed(2)} SAR
+
+Scheduling:
+- Preferred Date: ${customerInfo.preferredDate || 'Not specified'}
+- Preferred Time: ${customerInfo.preferredTime || 'Not specified'}
+- Notes: ${customerInfo.notes || 'None'}
+
+Please contact me to confirm the booking and arrange the service.
+
+Best regards,
+${customerInfo.name}
+            `);
+            
+            window.location.href = `mailto:amricq@gmail.com?subject=${subject}&body=${body}`;
+        }
+
+        // Event Listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Service checkbox listeners
+            document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                cb.addEventListener('change', updateTotal);
+            });
+            
+            // PWA Install
+            let deferredPrompt;
+            const installBtn = document.getElementById('installBtn');
+            
+            window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                deferredPrompt = e;
+                installBtn.classList.remove('hidden');
+            });
+            
+            installBtn.addEventListener('click', async () => {
+                if (deferredPrompt) {
+                    deferredPrompt.prompt();
+                    const { outcome } = await deferredPrompt.userChoice;
+                    if (outcome === 'accepted') {
+                        installBtn.classList.add('hidden');
+                    }
+                    deferredPrompt = null;
+                }
+            });
+            
+            // Close modal on outside click
+            document.getElementById('bookingModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeBookingModal();
+                }
+            });
+        });
+
+        // PWA Manifest
+        const manifest = {
+            "name": "MontSina HVAC",
+            "short_name": "MontSina",
+            "description": "Premium HVAC solutions for homes, businesses, and organizations across Saudi Arabia",
+            "start_url": "/",
+            "display": "standalone",
+            "background_color": "#0d0d0d",
+            "theme_color": "#1c4b92",
+            "icons": [
+                {
+                    "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwIDgwIEw1MCAyMCBMODAgODAgWiIgZmlsbD0iIzFjNGI5MiIvPjxjaXJjbGUgY3g9IjUwIiBjeT0iNDAiIHI9IjgiIGZpbGw9IiNkMWUyZmYiLz48cGF0aCBkPSJNMzAgNzAgTDcwIDcwIiBzdHJva2U9IiNkMWUyZmYiIHN0cm9rZS13aWR0aD0iMyIvPjwvc3ZnPg==",
+                    "sizes": "192x192",
+                    "type": "image/svg+xml"
+                }
+            ]
+        };
+
+        // Create manifest link dynamically
+        const manifestBlob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
+        const manifestUrl = URL.createObjectURL(manifestBlob);
+        const manifestLink = document.querySelector('link[rel="manifest"]');
+        manifestLink.href = manifestUrl;
+
+        // Create favicon dynamically
+        const faviconSvg = `<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 80 L50 20 L80 80 Z" fill="#1c4b92"/>
+            <circle cx="50" cy="40" r="8" fill="#d1e2ff"/>
+            <path d="M30 70 L70 70" stroke="#d1e2ff" stroke-width="3"/>
+        </svg>`;
+        const faviconBlob = new Blob([faviconSvg], { type: 'image/svg+xml' });
+        const faviconUrl = URL.createObjectURL(faviconBlob);
+        const faviconLink = document.querySelector('link[rel="icon"]');
+        faviconLink.href = faviconUrl;
+
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            // Create service worker inline
+            const swCode = `
+                const CACHE_NAME = 'montsina-hvac-v1';
+                const urlsToCache = [
+                    '/',
+                    '/index.html'
+                ];
+
+                self.addEventListener('install', event => {
+                    event.waitUntil(
+                        caches.open(CACHE_NAME)
+                            .then(cache => cache.addAll(urlsToCache))
+                    );
+                });
+
+                self.addEventListener('fetch', event => {
+                    event.respondWith(
+                        caches.match(event.request)
+                            .then(response => response || fetch(event.request))
+                    );
+                });
+            `;
+            
+            const swBlob = new Blob([swCode], { type: 'application/javascript' });
+            const swUrl = URL.createObjectURL(swBlob);
+            
+            navigator.serviceWorker.register(swUrl)
+                .then(registration => console.log('SW registered'))
+                .catch(error => console.log('SW registration failed'));
+        }
+
+        // Notice Modal Functions
+        function closeNoticeModal() {
+            document.getElementById('noticeModal').style.display = 'none';
+        }
+
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Auto-hide notice modal after 10 seconds
+        setTimeout(() => {
+            const noticeModal = document.getElementById('noticeModal');
+            if (noticeModal.style.display !== 'none') {
+                noticeModal.style.display = 'none';
+            }
+        }, 10000);
+
+        // Add loading animation to service cards
+        document.querySelectorAll('.service-card').forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            card.style.animation = 'fadeInUp 0.6s ease forwards';
+        });
+
+        // Add CSS animation
+        const style = document.createElement('style');
+        style.textContent = `
+            /* Loading Animation */
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            /* Pulse Animation for Call Button */
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+                100% { transform: scale(1); }
+            }
+            
+            .flashing-phone {
+                animation: pulse 2s infinite;
+            }
+            
+            .service-card {
+                opacity: 0;
+            }
+            
+            /* Mobile Navigation Styles */
+            @media (max-width: 768px) {
+                .nav-menu {
+                    position: fixed;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background: var(--primary-bg);
+                    flex-direction: column;
+                    padding: 2rem;
+                    display: none;
+                    border-top: 1px solid var(--border);
+                    backdrop-filter: blur(20px);
+                }
+                
+                .nav-menu.active {
+                    display: flex;
+                }
+                
+                .nav-menu a {
+                    padding: 1rem;
+                    border-radius: 8px;
+                    margin-bottom: 0.5rem;
+                }
+                
+                .hero h1 {
+                    font-size: 2rem;
+                }
+                
+                .hero p {
+                    font-size: 1rem;
+                }
+            }
+            
+            /* Enhanced Button Animations */
+            .btn-primary {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .btn-primary::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+                transition: left 0.5s;
+            }
+            
+            .btn-primary:hover::before {
+                left: 100%;
+            }
+            
+            /* Enhanced Card Hover Effects */
+            .service-card {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .service-card::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(45deg, transparent, rgba(28,75,146,0.1), transparent);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            
+            .service-card:hover::after {
+                opacity: 1;
+            }
+            
+            /* Social Media Hover Effects */
+            .social-link:hover {
+                color: var(--accent-blue) !important;
+                transform: scale(1.2);
+            }
+            
+            /* Progress Bar for Booking Steps */
+            .booking-progress {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+                position: relative;
+            }
+            
+            .booking-progress::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background: var(--border);
+                z-index: 1;
+            }
+            
+            .progress-step {
+                position: relative;
+                z-index: 2;
+                background: var(--primary-bg);
+                padding: 0.5rem;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid var(--border);
+                transition: all 0.3s ease;
+            }
+            
+            .progress-step.active {
+                border-color: var(--accent-blue);
+                background: var(--accent-blue);
+                color: white;
+            }
+            
+            .progress-step.completed {
+                border-color: var(--accent-blue);
+                background: var(--accent-blue);
+                color: white;
+            }
+            
+            /* Enhanced Modal Animations */
+            .modal.active .modal-content {
+                animation: slideIn 0.3s ease;
+            }
+            
+            @keyframes slideIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(-50px) scale(0.9);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0) scale(1);
+                }
+            }
+            
+            /* Print Styles */
+            @media print {
+                .header, .install-btn, .modal {
+                    display: none !important;
+                }
+                
+                body {
+                    background: white !important;
+                    color: black !important;
+                }
+            }
+        `;
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            .service-card {
+                opacity: 0;
+            }
+            
+            /* Mobile Navigation Styles */
+            @media (max-width: 768px) {
+                .nav-menu {
+                    position: fixed;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background: var(--primary-bg);
+                    flex-direction: column;
+                    padding: 2rem;
+                    display: none;
+                    border-top: 1px solid var(--border);
+                }
+                
+                .nav-menu.active {
+                    display: flex;
+                }
+                
+                .nav-menu a {
+                    padding: 1rem;
+                    border-radius: 8px;
+                    margin-bottom: 0.5rem;
+                }
+            }
+            
+            /* Enhanced Button Animations */
+            .btn-primary {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .btn-primary::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+                transition: left 0.5s;
+            }
+            
+            .btn-primary:hover::before {
+                left: 100%;
+            }
+            
+            /* Enhanced Card Hover Effects */
+            .service-card {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .service-card::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(45deg, transparent, rgba(28,75,146,0.1), transparent);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            
+            .service-card:hover::after {
+                opacity: 1;
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // Add social media hover effects
+        document.querySelectorAll('a[href*="facebook"], a[href*="instagram"], a[href*="x.com"], a[href*="youtube"], a[href*="tiktok"]').forEach(link => {
+            link.classList.add('social-link');
+        });
+    </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MontSina HVAC",
+        "description": "Premium HVAC solutions for homes, businesses, and organizations across Saudi Arabia",
+        "url": "https://montsina.com",
+        "telephone": "+9661002717039",
+        "email": "amricq@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Riyadh",
+            "addressCountry": "SA",
+            "addressRegion": "Riyadh Province"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "24.7136",
+            "longitude": "46.6753"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "$$",
+        "serviceArea": {
+            "@type": "Country",
+            "name": "Saudi Arabia"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "HVAC Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AC Installation",
+                        "description": "Professional air conditioning installation"
+                    },
+                    "price": "2500",
+                    "priceCurrency": "SAR"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AC Maintenance",
+                        "description": "Regular maintenance and cleaning services"
+                    },
+                    "price": "350",
+                    "priceCurrency": "SAR"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AC Repair",
+                        "description": "Fast and reliable AC repair services"
+                    },
+                    "price": "450",
+                    "priceCurrency": "SAR"
+                }
+            ]
+        }
+    }
+    </script>
+</body>
+</html>

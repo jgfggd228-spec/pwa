@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- MontSina HVAC - Single-file PWA -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0d0d0d" id="theme-color-meta" />
+  <title>MontSina HVAC | Premium Air Conditioning in KSA | 24/7 Riyadh</title>
+  <!-- SEO: Description & Keywords for KSA -->
+  <meta name="description" content="MontSina HVAC in Riyadh, Saudi Arabia. Premium air conditioning installation, maintenance, repair, and commercial HVAC. 24/7 service across all KSA. Original parts, certified technicians, 30-day guarantee. Book now for fast support." />
+  <meta name="keywords" content="HVAC Riyadh, AC installation KSA, AC maintenance Saudi Arabia, air conditioning repair Riyadh, commercial HVAC KSA, duct cleaning Saudi, emergency AC service Riyadh, MontSina HVAC" />
+  <link rel="canonical" href="https://montsina.com" />
+  <!-- Open Graph & Twitter -->
+  <meta property="og:title" content="MontSina HVAC - Premium Air Conditioning Solutions" />
+  <meta property="og:description" content="Professional HVAC solutions across Saudi Arabia. 24/7 service, original parts, certified technicians. Book now." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://montsina.com" />
+  <meta property="og:image" content="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'><rect width='100%' height='100%' fill='%230d0d0d'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='64' fill='%23d1e2ff'>MontSina HVAC</text></svg>" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MontSina HVAC" />
+  <meta name="twitter:description" content="Premium HVAC services across KSA. 24/7." />
+
+  <!-- Favicon from inline SVG logo -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>
+    <defs>
+      <linearGradient id='g' x1='0' x2='1' y1='1' y2='0'>
+        <stop offset='0%' stop-color='%231c4b92'/>
+        <stop offset='100%' stop-color='%23d1e2ff'/>
+      </linearGradient>
+    </defs>
+    <rect rx='12' ry='12' x='2' y='2' width='60' height='60' fill='%230d0d0d' stroke='%23d1e2ff' stroke-width='2'/>
+    <path d='M8 44 L22 26 L32 36 L42 22 L56 44' fill='none' stroke='url(%23g)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/>
+    <path d='M10 50 Q24 46 38 50 Q52 54 58 50' fill='none' stroke='%23ffffff' stroke-opacity='0.7' stroke-width='2'/>
+    <text x='14' y='22' font-size='10' fill='%23d1e2ff' font-family='Arial, Helvetica, sans-serif'>MS</text>
+  </svg>" />
+
+  <!-- JSON-LD Structured Data for Local HVAC Business in KSA -->
+  <script type="application/ld+json" id="jsonld-local">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "MontSina HVAC",
+    "image": "https://montsina.com/logo.svg",
+    "logo": "https://montsina.com/logo.svg",
+    "description": "Premium air conditioning installation, maintenance, and repair services in Riyadh and across all KSA. 24/7 availability, original parts, certified technicians.",
+    "url": "https://montsina.com",
+    "telephone": "+201002717039",
+    "email": "mailto:amricq@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Riyadh",
+      "addressCountry": "SA"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Saudi Arabia"
+    },
+    "openingHours": "Mo-Su 00:00-23:59",
+    "priceRange": "$$$",
+    "sameAs": [
+      "https://facebook.com/amricq",
+      "https://instagram.com/amricq",
+      "https://x.com/amriq",
+      "https://youtube.com/@amricq",
+      "https://tiktok.com/@amricq"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --text: #ffffff;
+      --muted: #c9d2e3;
+      --accent: #1c4b92; /* deep blue */
+      --accent-2: #d1e2ff; /* light blue */
+      --card: #111318;
+      --card-2: #141826;
+      --metal-1: #2a2a2a;
+      --metal-2: #5a5a5a;
+      --metal-3: #9a9a9a;
+      --success: #20c997;
+      --danger: #ff4d4f;
+      --warning: #f5a524;
+      --shadow-3d: 0 8px 24px rgba(0,0,0,0.6), inset 0 2px 0 rgba(255,255,255,0.05), inset 0 -3px 0 rgba(0,0,0,0.5);
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --text: #0d0d0d;
+      --muted: #334155;
+      --card: #ffffff;
+      --card-2: #f0f4ff;
+      --shadow-3d: 0 8px 24px rgba(16,24,40,0.15), inset 0 2px 0 rgba(255,255,255,0.9), inset 0 -3px 0 rgba(0,0,0,0.04);
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Global Utilities */
+    .container { width: min(1200px, 92vw); margin: 0 auto; }
+    .grid { display: grid; gap: 16px; }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    @media (max-width: 980px) { .grid-3 { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+    @media (max-width: 640px) { .grid-3, .grid-2 { grid-template-columns: 1fr; } }
+    .card {
+      background: linear-gradient(180deg, var(--card), var(--card-2));
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: var(--shadow-3d);
+      padding: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+    .section { padding: 48px 0; }
+    .section h2 { margin: 0 0 12px; font-size: 32px; letter-spacing: 0.4px; }
+    .section p.lead { margin: 0 0 24px; color: var(--muted); }
+
+    /* 3D Metallic Button */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      border: 0;
+      cursor: pointer;
+      color: #fff;
+      text-decoration: none;
+      transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+      font-weight: 600;
+    }
+    .btn-metal {
+      background: linear-gradient(180deg, var(--metal-3), var(--metal-2), var(--metal-1));
+      box-shadow: var(--shadow-3d);
+    }
+    .btn-accent {
+      background: linear-gradient(180deg, #2a65c5, #1c4b92);
+      box-shadow: 0 10px 24px rgba(28,75,146,0.5), inset 0 1px rgba(255,255,255,0.2);
+    }
+    .btn-ghost { background: transparent; color: var(--text); border: 1px solid rgba(255,255,255,0.15); }
+    .btn:hover { transform: translateY(-2px); filter: brightness(1.03); }
+    .btn:active { transform: translateY(0); filter: brightness(.98); }
+
+    /* Header / Navbar */
+    header {
+      position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px);
+      background: linear-gradient(180deg, rgba(13,13,13,.9), rgba(13,13,13,.6));
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: .5px; }
+    .brand svg { width: 36px; height: 36px; }
+    .menu { display: flex; gap: 8px; align-items: center; }
+    .menu a, .menu button.toggle-theme { color: var(--text); text-decoration: none; font-weight: 600; padding: 10px 12px; border-radius: 10px; }
+    .menu a:hover { background: rgba(255,255,255,0.08); }
+    .menu .accent-1 { color: #d1e2ff; }
+    .menu .accent-2 { color: #a5c8ff; }
+    .hamburger { display: none; background: transparent; border: 0; color: var(--text); font-size: 22px; }
+    @media (max-width: 860px) {
+      .menu { position: fixed; left: 0; right: 0; top: 58px; background: var(--bg); padding: 12px; display: none; flex-direction: column; gap: 6px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+      .menu.open { display: flex; }
+      .hamburger { display: inline-flex; }
+    }
+
+    /* Hero */
+    .hero { position: relative; min-height: 86vh; display: grid; place-items: center; overflow: hidden; }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: -1;
+      background: radial-gradient(1200px 600px at 80% 20%, rgba(33,72,128,.35), transparent 60%),
+                  radial-gradient(1000px 500px at 10% 90%, rgba(209,226,255,.15), transparent 60%),
+                  linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    }
+    .hero-art {
+      position: absolute; inset: -10% -5% auto -5%; height: 60%; opacity: .2; pointer-events: none;
+    }
+    .hero-inner { text-align: center; padding: 32px 16px; }
+    .hero h1 { font-size: clamp(28px, 5vw, 56px); margin: 0 0 10px; }
+    .hero p { color: var(--muted); margin: 0 0 18px; }
+    .hero .cta { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+    /* Flashing call button */
+    @keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(32,201,151,.5);} 70% { box-shadow: 0 0 0 16px rgba(32,201,151,0);} 100% { box-shadow: 0 0 0 0 rgba(32,201,151,0);} }
+    @keyframes flash { 0%, 100% { filter: drop-shadow(0 0 6px rgba(32,201,151,.75)); } 50% { filter: drop-shadow(0 0 16px rgba(32,201,151,1)); } }
+    .call-btn {
+      position: fixed; right: 16px; bottom: 86px; z-index: 40;
+      width: 64px; height: 64px; border-radius: 50%;
+      background: linear-gradient(180deg, #2ee6a1, #20c997);
+      display: grid; place-items: center; animation: pulse-ring 1.8s infinite;
+      border: 0; cursor: pointer; color: #052d1a;
+    }
+    .call-btn svg { width: 28px; height: 28px; animation: flash 1.2s infinite; }
+    @media (min-width: 861px) { .call-btn { bottom: 24px; } }
+
+    /* Services */
+    .service-card { display: grid; grid-template-columns: 120px 1fr; gap: 14px; align-items: center; }
+    .service-thumb { width: 120px; height: 100px; border-radius: 12px; background: linear-gradient(180deg, rgba(209,226,255,.15), rgba(28,75,146,.2)); display: grid; place-items: center; border: 1px solid rgba(255,255,255,.08); }
+    .price { font-weight: 800; color: #d1e2ff; letter-spacing: .5px; }
+    .book-btn { animation: bookPulse 2.6s infinite; }
+    @keyframes bookPulse { 0%,100% { transform: translateY(0);} 50% { transform: translateY(-2px);} }
+
+    /* Why / Guarantees */
+    .feature { display: flex; gap: 12px; align-items: flex-start; }
+
+    /* Team */
+    .team-card { text-align: center; }
+    .avatar { width: 96px; height: 96px; border-radius: 50%; background: linear-gradient(180deg, #2a2a2a, #1a1a1a); display: grid; place-items: center; margin: 0 auto 10px; border: 1px solid rgba(255,255,255,.08); }
+
+    /* Mobile Action Bar */
+    .action-bar { position: fixed; left: 0; right: 0; bottom: 0; padding: 6px; display: none; grid-template-columns: repeat(3, 1fr); gap: 8px; background: rgba(13,13,13,.85); border-top: 1px solid rgba(255,255,255,.08); z-index: 45; }
+    .action-bar .btn { padding: 10px 8px; border-radius: 12px; }
+    @media (max-width: 860px) { .action-bar { display: grid; } }
+
+    /* Booking Modal */
+    .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.5); display: none; z-index: 60; }
+    .modal { position: fixed; top: 0; right: -100%; width: min(720px, 100%); height: 100%; background: var(--bg); box-shadow: -20px 0 40px rgba(0,0,0,.4); z-index: 70; display: grid; grid-template-rows: auto 1fr auto; transition: right .35s ease; }
+    .modal.open { right: 0; }
+    .modal-header { padding: 14px 16px; border-bottom: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; justify-content: space-between; }
+    .stepper { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; padding: 12px; }
+    .stepper .dot { height: 8px; border-radius: 8px; background: #2a2a2a; }
+    .stepper .dot.active { background: linear-gradient(90deg, #2a65c5, #1c4b92); }
+    .modal-body { padding: 16px; overflow: auto; }
+    .modal-footer { padding: 12px 16px; border-top: 1px solid rgba(255,255,255,.08); display: flex; gap: 8px; justify-content: space-between; align-items: center; }
+    .form-row { display: grid; gap: 10px; grid-template-columns: repeat(2,1fr); }
+    .form-row-1 { grid-template-columns: 1fr; }
+    @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .field input, .field select, .field textarea { background: #0f1220; color: var(--text); border-radius: 12px; border: 1px solid rgba(255,255,255,.1); padding: 12px; }
+    [data-theme="light"] .field input, [data-theme="light"] .field select, [data-theme="light"] .field textarea { background: #ffffff; color: #0d0d0d; }
+    .totals { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+    .totals .label { color: var(--muted); }
+    .divider { height: 1px; background: rgba(255,255,255,.08); margin: 8px 0; }
+
+    /* Notice Fullscreen */
+    .notice { position: fixed; inset: 0; background: rgba(0,0,0,.8); display: none; z-index: 80; }
+    .notice .content { max-width: 720px; margin: 12vh auto; background: var(--bg); border-radius: 16px; border: 1px solid rgba(255,255,255,.08); padding: 22px; box-shadow: var(--shadow-3d); }
+
+    /* Footer */
+    footer { padding: 36px 0 90px; border-top: 1px solid rgba(255,255,255,.08); }
+    footer .cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    @media (max-width: 960px) { footer .cols { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 620px) { footer .cols { grid-template-columns: 1fr; } }
+
+    /* Decorative Rococo-esque lines (subtle) */
+    .swirl { position: absolute; opacity: .12; filter: blur(1px); }
+
+    /* Toast */
+    .toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: 96px; background: #111318; color: #fff; border: 1px solid rgba(255,255,255,.1); border-radius: 10px; padding: 10px 14px; display: none; z-index: 90; }
+  </style>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container nav">
+      <div class="brand" aria-label="MontSina HVAC">
+        <!-- Inline SVG Logo -->
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="lg" x1="0" x2="1" y1="1" y2="0">
+              <stop offset="0%" stop-color="#1c4b92"/>
+              <stop offset="100%" stop-color="#d1e2ff"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="60" height="60" rx="12" ry="12" fill="#0d0d0d" stroke="#d1e2ff" stroke-width="2"/>
+          <path d="M8 44 L22 26 L32 36 L42 22 L56 44" fill="none" stroke="url(#lg)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 50 Q24 46 38 50 Q52 54 58 50" fill="none" stroke="#ffffff" stroke-opacity="0.7" stroke-width="2"/>
+          <text x="14" y="22" font-size="10" fill="#d1e2ff" font-family="Arial, Helvetica, sans-serif">MS</text>
+        </svg>
+        <span>MontSina</span>
+      </div>
+      <nav>
+        <button class="hamburger" aria-label="Menu" id="hamburger">☰</button>
+        <div class="menu" id="menu">
+          <a href="#home" class="accent-1">🏠 Home</a>
+          <a href="#services" class="accent-2">❄️ Services</a>
+          <a href="#about">ℹ️ About</a>
+          <a href="#team">👥 Team</a>
+          <a href="#contact">✉️ Contact</a>
+          <button id="installBtn" class="btn btn-metal" title="Install App">📲 Get App</button>
+          <button class="toggle-theme btn btn-ghost" id="themeToggle" title="Toggle theme">🌓 Theme</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <svg class="hero-art" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="ridge" x1="0" x2="1" y1="1" y2="0">
+          <stop offset="0%" stop-color="#1c4b92"/>
+          <stop offset="100%" stop-color="#d1e2ff"/>
+        </linearGradient>
+      </defs>
+      <path d="M0 300 Q200 240 360 300 T720 300 T1200 300 V400 H0 Z" fill="url(#ridge)"/>
+      <path d="M0 320 Q180 260 360 320 T720 320 T1200 320" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="2"/>
+    </svg>
+    <div class="container hero-inner">
+      <h1>MontSina HVAC — Premium Air Conditioning Solutions</h1>
+      <p class="lead">Professional HVAC services for homes, businesses, and organizations across Saudi Arabia. Available 24/7 with guaranteed quality and original spare parts.</p>
+      <div class="cta">
+        <a class="btn btn-accent" href="#services">Explore Services</a>
+        <button class="btn btn-metal" id="openBookingHero">📅 Book NOW!</button>
+        <a class="btn btn-ghost" href="tel:01002717039">📞 Call Now: 01002717039</a>
+      </div>
+    </div>
+    <!-- Decorative swirls -->
+    <svg class="swirl" style="left:5%;top:10%;width:220px;height:220px" viewBox="0 0 200 200" aria-hidden="true"><path d="M20 100q40-60 80 0t80 0" fill="none" stroke="#d1e2ff" stroke-opacity=".18" stroke-width="6"/></svg>
+    <svg class="swirl" style="right:5%;bottom:10%;width:260px;height:260px" viewBox="0 0 220 220" aria-hidden="true"><path d="M10 180q60-40 100-80t100-60" fill="none" stroke="#1c4b92" stroke-opacity=".2" stroke-width="6"/></svg>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p class="lead">Professional HVAC solutions for homes, businesses, and organizations across Saudi Arabia</p>
+      <div class="grid grid-3" id="servicesGrid">
+        <!-- Cards populated by JS from a single data source to keep pricing consistent -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose / Guarantees -->
+  <section class="section" id="why">
+    <div class="container grid grid-3">
+      <div class="card">
+        <h3>Why Choose MontSina?</h3>
+        <div class="feature"><div>🛡️</div><div><b>Original Parts:</b> We use only genuine spare parts with full warranty.</div></div>
+        <div class="feature"><div>⚡</div><div><b>24/7 Support:</b> Round-the-clock emergency service available.</div></div>
+        <div class="feature"><div>💰</div><div><b>Money Back:</b> 30-day satisfaction guarantee.</div></div>
+      </div>
+      <div class="card">
+        <h3>📍 Service Information</h3>
+        <p><b>Location:</b> Riyadh, Saudi Arabia</p>
+        <p><b>Hours:</b> 24/7 Service Available</p>
+        <p><b>Coverage:</b> All KSA Regions Covered</p>
+        <a class="btn btn-metal" href="https://www.google.com/maps/search/?api=1&query=Riyadh%2C%20Saudi%20Arabia" target="_blank" rel="noopener">🗺️ View on Google Maps</a>
+      </div>
+      <div class="card">
+        <h3>Our Guarantees</h3>
+        <div class="feature"><div>🏆</div><div><b>Quality Assurance</b><br/>KSA registered and legally compliant business with full authority assurance.</div></div>
+        <div class="feature"><div>🔧</div><div><b>Original Parts</b><br/>We use only genuine manufacturer parts with full warranty coverage.</div></div>
+        <div class="feature"><div>💯</div><div><b>Satisfaction</b><br/>30-day money-back guarantee on all services and installations.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container card">
+      <h2>About MontSina</h2>
+      <p class="lead">Your trusted partner for premium HVAC solutions in Saudi Arabia.</p>
+      <p>MontSina HVAC has been serving the Kingdom of Saudi Arabia with premium air conditioning solutions for homes, businesses, and organizations. Based in Riyadh, we've built our reputation on quality service, original parts, and customer satisfaction.</p>
+      <p>Our team of certified technicians is available 24/7 to ensure your comfort is never compromised. We specialize in installation, maintenance, and repair services using only genuine spare parts backed by comprehensive warranties.</p>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section" id="team">
+    <div class="container">
+      <h2>Our Expert Team</h2>
+      <p class="lead">Meet our certified professionals dedicated to providing exceptional HVAC services</p>
+      <div class="grid grid-4 grid-3">
+        <div class="card team-card">
+          <div class="avatar">👨‍🔧</div>
+          <h3>Ahmed Al-Rashid</h3>
+          <p class="muted">Lead HVAC Technician • 15+ Years Experience</p>
+          <p>Specialties: Commercial HVAC, System Design, Energy Efficiency</p>
+        </div>
+        <div class="card team-card">
+          <div class="avatar">👷‍♂️</div>
+          <h3>Mohammed Al-Saud</h3>
+          <p class="muted">Senior Installation Specialist • 12+ Years Experience</p>
+          <p>Specialties: Residential AC, Duct Installation, Maintenance</p>
+        </div>
+        <div class="card team-card">
+          <div class="avatar">🚨</div>
+          <h3>Khalid Al-Otaibi</h3>
+          <p class="muted">Emergency Service Coordinator • 10+ Years Experience</p>
+          <p>Specialties: 24/7 Support, Emergency Repairs, Customer Service</p>
+        </div>
+        <div class="card team-card">
+          <div class="avatar">🔍</div>
+          <h3>Faisal Al-Mutairi</h3>
+          <p class="muted">Quality Control Manager • 8+ Years Experience</p>
+          <p>Specialties: Quality Assurance, Parts Verification, Training</p>
+        </div>
+      </div>
+      <div class="grid grid-3" style="margin-top:16px">
+        <div class="card" style="text-align:center"><div style="font-size:28px">Team Excellence</div><div style="font-size:22px;font-weight:800">50+</div><div class="muted">Years Combined Experience</div></div>
+        <div class="card" style="text-align:center"><div style="font-size:28px">1000+</div><div style="font-size:22px;font-weight:800">Satisfied Customers</div><div class="muted">Across all KSA</div></div>
+        <div class="card" style="text-align:center"><div style="font-size:28px">24/7</div><div style="font-size:22px;font-weight:800">Emergency Support</div><div class="muted">Any time, any day</div></div>
+      </div>
+      <div class="grid grid-4 grid-3" style="margin-top:16px">
+        <div class="card" style="text-align:center">🏆 KSA Licensed</div>
+        <div class="card" style="text-align:center">🔧 HVAC Certified</div>
+        <div class="card" style="text-align:center">⚡ Safety Trained</div>
+        <div class="card" style="text-align:center">🌟 Quality Assured</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Booking / Contract & Invoice Form -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact & Booking</h2>
+      <p class="lead">Get in touch with us or create a custom service contract</p>
+      <div class="grid grid-2">
+        <!-- Quick Contact -->
+        <div class="card">
+          <h3>Get In Touch</h3>
+          <div class="feature"><div>📞</div><div><b>Phone</b><br/>01002717039</div></div>
+          <div class="feature"><div>📱</div><div><b>WhatsApp</b><br/>0201002717039</div></div>
+          <div class="feature"><div>✉️</div><div><b>Email</b><br/>amricq@gmail.com</div></div>
+          <div class="feature"><div>📍</div><div><b>Location</b><br/>Riyadh, Saudi Arabia — Serving all KSA regions</div></div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:12px">
+            <a class="btn btn-accent" href="tel:01002717039">Call Now</a>
+            <a class="btn btn-metal" target="_blank" rel="noopener" id="waContact">WhatsApp</a>
+            <a class="btn btn-ghost" href="mailto:amricq@gmail.com">Email</a>
+            <button class="btn btn-metal" id="openBookingContact">📅 Create Booking</button>
+          </div>
+        </div>
+        <!-- Contract / Invoice Form -->
+        <div class="card">
+          <h3>Create Service Contract</h3>
+          <div class="form-row">
+            <div class="field"><label for="custName">Full Name</label><input id="custName" placeholder="Your name"/></div>
+            <div class="field"><label for="custPhone">Phone</label><input id="custPhone" placeholder="Phone number"/></div>
+            <div class="field"><label for="custEmail">Email</label><input id="custEmail" placeholder="Email address"/></div>
+            <div class="field"><label for="custAddress">Location / Address</label><input id="custAddress" placeholder="City, Area, Street"/></div>
+          </div>
+          <div class="field" style="margin-top:10px"><label><input type="checkbox" id="isBusiness"/> I'm purchasing as a business</label></div>
+          <div class="field" id="businessRow" style="display:none"><label for="businessName">Business / Organization Name</label><input id="businessName" placeholder="Company name"/></div>
+          <div class="divider"></div>
+          <h4>Select Services</h4>
+          <div id="contractServices" class="grid grid-2" style="margin-top:8px"></div>
+          <div class="divider"></div>
+          <div class="totals">
+            <div class="label">Subtotal</div><div id="subtotal">0 SAR</div>
+            <div class="label">VAT (15%)</div><div id="vat">0 SAR</div>
+            <div class="label" style="font-weight:800">Total</div><div id="total" style="font-weight:800">0 SAR</div>
+          </div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:12px">
+            <button class="btn btn-metal" id="downloadPdf">📄 PDF</button>
+            <button class="btn btn-accent" id="emailOrder">✉️ Email Order</button>
+            <button class="btn btn-ghost" id="saveCustomer">💾 Save Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with QR and social links -->
+  <footer>
+    <div class="container">
+      <div class="cols">
+        <div>
+          <div class="brand" style="margin-bottom:8px">
+            <svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="12" ry="12" fill="#0d0d0d" stroke="#d1e2ff" stroke-width="2"/><path d="M8 44 L22 26 L32 36 L42 22 L56 44" fill="none" stroke="#1c4b92" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>MontSina</span>
+          </div>
+          <p>Premium HVAC solutions for homes, businesses, and organizations across Saudi Arabia. Available 24/7 with guaranteed quality service.</p>
+          <p>📍 Riyadh, Saudi Arabia · 🕒 24/7 Service Available · 🌍 All KSA Coverage</p>
+          <p><b>KSA registrations, legal & authority assurance.</b></p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <p><a href="#home">Home</a><br/><a href="#services">Services</a><br/><a href="#about">About Us</a><br/><a href="#team">Our Team</a><br/><a href="#contact">Contact</a></p>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <p>📞 Phone: <a href="tel:01002717039">01002717039</a><br/>📱 WhatsApp: <a target="_blank" rel="noopener" id="waFooter">0201002717039</a><br/>✉️ Email: <a href="mailto:amricq@gmail.com">amricq@gmail.com</a></p>
+          <h4>Follow Us</h4>
+          <p>
+            <a href="https://facebook.com/amricq" target="_blank" rel="noopener">Facebook</a> ·
+            <a href="https://instagram.com/amricq" target="_blank" rel="noopener">Instagram</a> ·
+            <a href="https://x.com/amriq" target="_blank" rel="noopener">X</a> ·
+            <a href="https://youtube.com/@amricq" target="_blank" rel="noopener">YouTube</a> ·
+            <a href="https://tiktok.com/@amricq" target="_blank" rel="noopener">TikTok</a>
+          </p>
+        </div>
+        <div>
+          <h4>Official Account QR</h4>
+          <div class="card" style="text-align:center">
+            <!-- QR Placeholder -->
+            <svg viewBox="0 0 120 120" width="120" height="120" aria-label="QR Code Placeholder">
+              <rect width="120" height="120" fill="#0d0d0d" stroke="#d1e2ff"/>
+              <rect x="8" y="8" width="28" height="28" fill="#d1e2ff"/>
+              <rect x="84" y="8" width="28" height="28" fill="#d1e2ff"/>
+              <rect x="8" y="84" width="28" height="28" fill="#d1e2ff"/>
+              <rect x="40" y="40" width="12" height="12" fill="#d1e2ff"/>
+              <rect x="60" y="40" width="12" height="12" fill="#d1e2ff"/>
+              <rect x="80" y="60" width="12" height="12" fill="#d1e2ff"/>
+              <rect x="40" y="80" width="12" height="12" fill="#d1e2ff"/>
+            </svg>
+            <p style="margin:8px 0 4px">Scan to connect</p>
+            <p><a href="https://montsina.com" target="_blank" rel="noopener">montsina.com</a></p>
+            <button class="btn btn-metal" id="installBtnFooter">📲 Get App</button>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:16px; color:var(--muted); font-size:14px">
+        © 2025 MontSina HVAC. All rights reserved. · 🏆 KSA Licensed · 🔧 Certified Technicians · 🛡️ 30-Day Guarantee · ⚡ 24/7 Support
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Action Bar -->
+  <div class="action-bar" aria-label="Quick Actions">
+    <button class="btn btn-accent" id="openBookingFAB">📅 Booking</button>
+    <a class="btn btn-metal" href="tel:01002717039">📞 Call</a>
+    <a class="btn btn-metal" target="_blank" rel="noopener" id="waBottom">🟢 WhatsApp</a>
+  </div>
+
+  <!-- Floating Call Button -->
+  <button class="call-btn" id="callPulse" title="Call MontSina now">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24a11.72 11.72 0 003.68.59c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1A17 17 0 013 4c0-.55.45-1 1-1h2.47c.55 0 1 .45 1 1 0 1.24.2 2.43.59 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  </button>
+
+  <!-- Booking Modal -->
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <aside class="modal" id="bookingModal" aria-modal="true" role="dialog" aria-labelledby="bookingTitle">
+    <div class="modal-header">
+      <h3 id="bookingTitle" style="margin:0">📅 Book Service</h3>
+      <button class="btn btn-ghost" id="closeModal">✖ Close</button>
+    </div>
+    <div class="stepper" id="stepper">
+      <div class="dot" data-step="1"></div>
+      <div class="dot" data-step="2"></div>
+      <div class="dot" data-step="3"></div>
+      <div class="dot" data-step="4"></div>
+    </div>
+    <div class="modal-body">
+      <!-- Step 1: Services -->
+      <div class="step" data-step="1">
+        <h4>Step 1: Select Services</h4>
+        <div id="bookingServices" class="grid grid-2" style="margin-top:8px"></div>
+      </div>
+      <!-- Step 2: Customer Info -->
+      <div class="step" data-step="2" style="display:none">
+        <h4>Step 2: Customer Information</h4>
+        <div class="form-row">
+          <div class="field"><label for="bName">Full Name</label><input id="bName"/></div>
+          <div class="field"><label for="bPhone">Phone</label><input id="bPhone"/></div>
+          <div class="field"><label for="bEmail">Email</label><input id="bEmail"/></div>
+          <div class="field"><label for="bAddress">Location / Address</label><input id="bAddress"/></div>
+        </div>
+        <div class="field" style="margin-top:8px"><label><input type="checkbox" id="bIsBusiness"/> I'm purchasing as a business</label></div>
+        <div class="field" id="bBusinessRow" style="display:none"><label for="bBusiness">Business / Organization Name</label><input id="bBusiness"/></div>
+      </div>
+      <!-- Step 3: Schedule -->
+      <div class="step" data-step="3" style="display:none">
+        <h4>Step 3: Schedule</h4>
+        <div class="form-row">
+          <div class="field"><label for="bDate">Preferred Date</label><input id="bDate" type="date"/></div>
+          <div class="field"><label for="bTime">Preferred Time</label><input id="bTime" type="time"/></div>
+        </div>
+        <div class="field" style="margin-top:8px"><label for="bNotes">Notes</label><textarea id="bNotes" rows="4" placeholder="Any additional details..."></textarea></div>
+      </div>
+      <!-- Step 4: Confirmation -->
+      <div class="step" data-step="4" style="display:none">
+        <h4>Step 4: Confirmation</h4>
+        <div id="summary"></div>
+        <div class="divider"></div>
+        <div class="totals">
+          <div class="label">Subtotal</div><div id="bSubtotal">0 SAR</div>
+          <div class="label">VAT (15%)</div><div id="bVat">0 SAR</div>
+          <div class="label" style="font-weight:800">Total</div><div id="bTotal" style="font-weight:800">0 SAR</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div style="display:flex; gap:8px">
+        <button class="btn btn-ghost" id="prevStep">⟵ Back</button>
+        <button class="btn btn-accent" id="nextStep">Next ⟶</button>
+      </div>
+      <div style="display:flex; gap:8px">
+        <button class="btn btn-metal" id="bDownloadPdf">📄 PDF</button>
+        <button class="btn btn-accent" id="bEmail">✉️ Confirm & Email</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Pop-up Notice -->
+  <div class="notice" id="notice">
+    <div class="content">
+      <h3>Attention</h3>
+      <p>All dates and times are UTC-based, and data may be delayed up to 5:15 minutes.<br/>We will respond to your orders as soon as possible.<br/>Thanks for your patience.<br/>- MontSina <br/>- AmrOathman</p>
+      <div style="display:flex; gap:8px; justify-content:flex-end">
+        <button class="btn btn-ghost" id="hideNotice">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">App is ready to install. Tap "Get App".</div>
+
+  <script>
+  // ========================
+  // Data: Services catalog
+  // ========================
+  const SERVICES = [
+    { id: 'install', icon: '❄️', title: 'AC Installation', tag: 'Residential', desc: 'Professional air conditioning installation for homes and businesses', price: 2500 },
+    { id: 'maint', icon: '🔧', title: 'AC Maintenance', tag: 'Maintenance', desc: 'Regular maintenance and cleaning services to keep your AC running efficiently', price: 350 },
+    { id: 'repair', icon: '⚡', title: 'AC Repair', tag: 'Residential', desc: 'Fast and reliable AC repair services available 24/7', price: 450 },
+    { id: 'commercial', icon: '🏢', title: 'Commercial HVAC', tag: 'Commercial', desc: 'Complete HVAC solutions for businesses and organizations', price: 8500 },
+    { id: 'duct', icon: '🌪️', title: 'Duct Cleaning', tag: 'Maintenance', desc: 'Professional air duct cleaning and sanitization services', price: 650 },
+    { id: 'emergency', icon: '🚨', title: 'Emergency Service', tag: 'Residential', desc: '24/7 emergency HVAC repair and support services', price: 750 },
+  ];
+
+  // ========================
+  // Helpers
+  // ========================
+  const qs = (sel, el=document) => el.querySelector(sel);
+  const qsa = (sel, el=document) => Array.from(el.querySelectorAll(sel));
+  const SAR = v => `${Number(v).toLocaleString('en-US')} SAR`;
+  const encode = s => encodeURIComponent(String(s || ''));
+  const getNowISO = () => new Date().toISOString();
+  const vatRate = 0.15;
+  const socialText = encode(`Hello MontSina, I need HVAC assistance.`);
+
+  function buildWhatsAppLink(number, text) {
+    const digits = String(number).replace(/\D/g, '');
+    return `https://wa.me/${digits}?text=${text || socialText}`;
+  }
+
+  // ========================
+  // Theme Toggle
+  // ========================
+  const themeToggle = qs('#themeToggle');
+  const themeColorMeta = qs('#theme-color-meta');
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    themeColorMeta.setAttribute('content', theme === 'dark' ? '#0d0d0d' : '#f8fafc');
+  }
+  applyTheme(localStorage.getItem('theme') || 'dark');
+  themeToggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  });
+
+  // ========================
+  // Navbar mobile
+  // ========================
+  const menu = qs('#menu');
+  const hamburger = qs('#hamburger');
+  hamburger.addEventListener('click', () => menu.classList.toggle('open'));
+  qsa('#menu a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+
+  // ========================
+  // Populate Services grid
+  // ========================
+  function serviceThumbSVG(emoji) {
+    const svg = `<svg viewBox='0 0 160 120' xmlns='http://www.w3.org/2000/svg'>
+      <defs>
+        <linearGradient id='bg' x1='0' x2='0' y1='0' y2='1'>
+          <stop offset='0%' stop-color='rgba(209,226,255,0.2)' />
+          <stop offset='100%' stop-color='rgba(28,75,146,0.25)' />
+        </linearGradient>
+      </defs>
+      <rect x='0.5' y='0.5' width='159' height='119' rx='12' ry='12' fill='url(#bg)' stroke='rgba(255,255,255,0.2)'/>
+      <text x='50%' y='56%' text-anchor='middle' dominant-baseline='middle' font-size='48'>${emoji}</text>
+      <path d='M10 90 Q 40 70 70 90 T 150 90' fill='none' stroke='white' stroke-opacity='.35' stroke-width='3'/>
+    </svg>`;
+    return 'data:image/svg+xml;utf8,' + encode(svg);
+  }
+
+  function renderServices() {
+    const grid = qs('#servicesGrid');
+    grid.innerHTML = '';
+    SERVICES.forEach(s => {
+      const el = document.createElement('div');
+      el.className = 'card service-card';
+      el.innerHTML = `
+        <div class="service-thumb"><img alt="${s.title}" src="${serviceThumbSVG(s.icon)}" style="width:100%;height:100%;border-radius:12px"/></div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">
+            <h3 style="margin:0">${s.icon} ${s.title}</h3>
+            <span class="price">${SAR(s.price)}</span>
+          </div>
+          <div style="color:var(--muted)">${s.tag}</div>
+          <p style="margin:6px 0 10px">${s.desc}</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button class="btn btn-accent book-btn" data-service-id="${s.id}">📅 Book Now!</button>
+            <a class="btn btn-ghost" href="mailto:amricq@gmail.com?subject=${encode('Service inquiry: ' + s.title)}&body=${encode('Hello MontSina, I would like to ask about ' + s.title + ' (' + SAR(s.price) + ').\nName: \nPhone: \nLocation: ')}">✉️ Email</a>
+          </div>
+        </div>`;
+      grid.appendChild(el);
+    });
+  }
+
+  // ========================
+  // Contract/Invoice services checklist
+  // ========================
+  function renderContractServices(containerId, checkboxName) {
+    const container = qs(containerId);
+    container.innerHTML = '';
+    SERVICES.forEach(s => {
+      const d = document.createElement('label');
+      d.className = 'card';
+      d.style.display = 'grid';
+      d.style.gridTemplateColumns = 'auto 1fr auto';
+      d.style.alignItems = 'center';
+      d.style.gap = '10px';
+      d.innerHTML = `
+        <input type="checkbox" name="${checkboxName}" value="${s.id}" data-price="${s.price}" style="accent-color:#1c4b92"/>
+        <div><div style="font-weight:700">${s.icon} ${s.title}</div><div style="color:var(--muted);font-size:14px">${s.desc}</div></div>
+        <div style="font-weight:800">${SAR(s.price)}</div>`;
+      container.appendChild(d);
+    });
+  }
+
+  function selectedServiceIds(name) {
+    return qsa(`input[name="${name}"]:checked`).map(i => i.value);
+  }
+
+  function computeTotals(ids) {
+    const subtotal = ids.map(id => SERVICES.find(s=>s.id===id)?.price || 0).reduce((a,b)=>a+b,0);
+    const vat = subtotal * vatRate;
+    const total = subtotal + vat;
+    return { subtotal, vat, total };
+  }
+
+  function updateContractTotals() {
+    const ids = selectedServiceIds('contract');
+    const {subtotal, vat, total} = computeTotals(ids);
+    qs('#subtotal').textContent = SAR(subtotal);
+    qs('#vat').textContent = SAR(vat.toFixed(2));
+    qs('#total').textContent = SAR(total.toFixed(2));
+  }
+
+  function updateBookingTotals() {
+    const ids = selectedServiceIds('booking');
+    const {subtotal, vat, total} = computeTotals(ids);
+    qs('#bSubtotal').textContent = SAR(subtotal);
+    qs('#bVat').textContent = SAR(vat.toFixed(2));
+    qs('#bTotal').textContent = SAR(total.toFixed(2));
+  }
+
+  // ========================
+  // Customer data persistence
+  // ========================
+  const customerKeys = ['custName','custPhone','custEmail','custAddress','isBusiness','businessName'];
+  function saveCustomerFromContract() {
+    const data = {
+      custName: qs('#custName').value,
+      custPhone: qs('#custPhone').value,
+      custEmail: qs('#custEmail').value,
+      custAddress: qs('#custAddress').value,
+      isBusiness: qs('#isBusiness').checked,
+      businessName: qs('#businessName').value
+    };
+    localStorage.setItem('montsina_customer', JSON.stringify(data));
+    toast('Saved customer info');
+    return data;
+  }
+  function loadCustomerToContract() {
+    const data = JSON.parse(localStorage.getItem('montsina_customer') || '{}');
+    if (!data) return;
+    qs('#custName').value = data.custName || '';
+    qs('#custPhone').value = data.custPhone || '';
+    qs('#custEmail').value = data.custEmail || '';
+    qs('#custAddress').value = data.custAddress || '';
+    qs('#isBusiness').checked = !!data.isBusiness;
+    qs('#businessName').value = data.businessName || '';
+    qs('#businessRow').style.display = data.isBusiness ? '' : 'none';
+  }
+  function getCustomerMerged() {
+    const store = JSON.parse(localStorage.getItem('montsina_customer') || '{}');
+    return {
+      name: qs('#bName').value || store.custName || '',
+      phone: qs('#bPhone').value || store.custPhone || '',
+      email: qs('#bEmail').value || store.custEmail || '',
+      address: qs('#bAddress').value || store.custAddress || '',
+      isBusiness: qs('#bIsBusiness').checked || store.isBusiness || false,
+      business: qs('#bBusiness').value || store.businessName || ''
+    };
+  }
+
+  // ========================
+  // Mailto builder
+  // ========================
+  function buildOrderEmail({ids, schedule, notes, customer}) {
+    const items = ids.map(id => SERVICES.find(s=>s.id===id));
+    const {subtotal, vat, total} = computeTotals(ids);
+    const subject = `${customer.isBusiness ? '[Business] ' : ''}Booking Request - ${items.map(i=>i.title).join(', ') || 'MontSina HVAC'}`;
+    const body = [
+      `Customer: ${customer.name}`,
+      `Phone: ${customer.phone}`,
+      `Email: ${customer.email}`,
+      `Address: ${customer.address}`,
+      customer.isBusiness ? `Business: ${customer.business}` : '',
+      `\nServices:`,
+      ...items.map(i => `- ${i.title}: ${SAR(i.price)}`),
+      `\nSubtotal: ${SAR(subtotal)}`,
+      `VAT (15%): ${SAR(vat.toFixed(2))}`,
+      `Total: ${SAR(total.toFixed(2))}`,
+      `\nSchedule: ${schedule?.date || ''} ${schedule?.time || ''}`,
+      `Notes: ${notes || ''}`,
+      `\nTime (UTC): ${new Date().toUTCString()}`
+    ].filter(Boolean).join('\n');
+    return `mailto:amricq@gmail.com?subject=${encode(subject)}&body=${encode(body)}`;
+  }
+
+  // ========================
+  // Simple PDF generator (minimal, single page text)
+  // ========================
+  function generateSimplePDF({ids, schedule, notes, customer}) {
+    const items = ids.map(id => SERVICES.find(s=>s.id===id));
+    const {subtotal, vat, total} = computeTotals(ids);
+    const lines = [];
+    lines.push('MontSina HVAC');
+    lines.push('Premium Air Conditioning Solutions');
+    lines.push('Riyadh, Saudi Arabia · 24/7 · All KSA');
+    lines.push('');
+    lines.push('Contract & Invoice');
+    lines.push(`Issued: ${new Date().toUTCString()}`);
+    lines.push('');
+    lines.push(`Client: ${customer.name}`);
+    if (customer.isBusiness) lines.push(`Business: ${customer.business}`);
+    lines.push(`Phone: ${customer.phone}`);
+    lines.push(`Email: ${customer.email}`);
+    lines.push(`Address: ${customer.address}`);
+    lines.push('');
+    lines.push('Items:');
+    items.forEach(i => lines.push(`- ${i.title}  ..........  ${SAR(i.price)}`));
+    lines.push('');
+    lines.push(`Subtotal: ${SAR(subtotal)}`);
+    lines.push(`VAT (15%): ${SAR(vat.toFixed(2))}`);
+    lines.push(`Total: ${SAR(total.toFixed(2))}`);
+    lines.push('');
+    lines.push(`Schedule: ${schedule?.date || ''} ${schedule?.time || ''}`);
+    lines.push(`Notes: ${notes || ''}`);
+    lines.push('');
+    lines.push('Terms: KSA registered and legally compliant business with full authority assurance. 30-day money-back guarantee. Pay on Delivery.');
+
+    // Minimal PDF (text only)
+    // Reference: PDF 1.4, one page, Type1 font
+    const pdfHeader = `%PDF-1.4\n`;
+    const contentStream = lines.map((t, idx) => `BT /F1 12 Tf 50 ${770 - idx*16} Td (${t.replace(/[()\\]/g, m => ({'(':'\\(',' )':'\\)', '\\':'\\\\'}[m]))}) Tj ET`).join('\n');
+    const stream = `<< /Length ${contentStream.length} >>\nstream\n${contentStream}\nendstream`;
+    const objects = [];
+    // 1: Catalog
+    objects.push('1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj');
+    // 2: Pages
+    objects.push('2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj');
+    // 3: Page
+    objects.push('3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj');
+    // 4: Font
+    objects.push('4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj');
+    // 5: Contents
+    objects.push(`5 0 obj ${stream} endobj`);
+    // Build xref
+    let offset = pdfHeader.length;
+    const xref = ['xref', '0 6', '0000000000 65535 f '];
+    const body = objects.map((o, i) => { const entry = offset; offset += (o + '\n').length; return {o, entry}; });
+    body.forEach(({entry}) => xref.push(String(entry).padStart(10,'0') + ' 00000 n '));
+    const xrefStart = offset;
+    const trailer = `trailer << /Size 6 /Root 1 0 R >>\nstartxref\n${xrefStart}\n%%EOF`;
+    const pdf = pdfHeader + body.map(x=>x.o+'\n').join('') + xref.join('\n') + '\n' + trailer;
+    const blob = new Blob([pdf], {type: 'application/pdf'});
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `MontSina-Invoice-${Date.now()}.pdf`; a.click(); URL.revokeObjectURL(a.href);
+  }
+
+  // ========================
+  // Booking modal logic
+  // ========================
+  const bookingModal = qs('#bookingModal');
+  const modalBackdrop = qs('#modalBackdrop');
+  const steps = qsa('.modal-body .step');
+  let currentStep = 1;
+  function setStep(n) {
+    currentStep = Math.max(1, Math.min(4, n));
+    steps.forEach(s => s.style.display = s.getAttribute('data-step') == currentStep ? '' : 'none');
+    qsa('.stepper .dot').forEach(d => d.classList.toggle('active', Number(d.dataset.step) <= currentStep));
+    // Update summary on step 4
+    if (currentStep === 4) {
+      const ids = selectedServiceIds('booking');
+      const items = ids.map(id => SERVICES.find(s=>s.id===id));
+      const customer = getCustomerMerged();
+      const date = qs('#bDate').value; const time = qs('#bTime').value; const notes = qs('#bNotes').value;
+      qs('#summary').innerHTML = `
+        <div class="card">
+          <div><b>Customer</b></div>
+          <div>${customer.name}${customer.isBusiness ? ' · ' + customer.business : ''}</div>
+          <div>${customer.phone} · ${customer.email}</div>
+          <div>${customer.address}</div>
+        </div>
+        <div class="card" style="margin-top:8px">
+          <div><b>Services</b></div>
+          <ul style="margin:6px 0 0; padding-left:18px">${items.map(i=>`<li>${i.icon} ${i.title} — ${SAR(i.price)}</li>`).join('')}</ul>
+        </div>
+        <div class="card" style="margin-top:8px">
+          <div><b>Schedule</b></div>
+          <div>${date || ''} ${time || ''}</div>
+          <div style="color:var(--muted)">${notes || ''}</div>
+        </div>`;
+      updateBookingTotals();
+    }
+  }
+  function openModal() { bookingModal.classList.add('open'); modalBackdrop.style.display='block'; setStep(1);} 
+  function closeModal() { bookingModal.classList.remove('open'); modalBackdrop.style.display='none'; }
+  qs('#closeModal').addEventListener('click', closeModal);
+  modalBackdrop.addEventListener('click', closeModal);
+  qs('#prevStep').addEventListener('click', ()=> setStep(currentStep-1));
+  qs('#nextStep').addEventListener('click', ()=> setStep(currentStep+1));
+  qs('#openBookingHero').addEventListener('click', openModal);
+  qs('#openBookingContact').addEventListener('click', openModal);
+  qs('#openBookingFAB').addEventListener('click', openModal);
+
+  // Auto show/hide business rows
+  qs('#isBusiness').addEventListener('change', (e)=>{ qs('#businessRow').style.display = e.target.checked ? '' : 'none'; });
+  qs('#bIsBusiness').addEventListener('change', (e)=>{ qs('#bBusinessRow').style.display = e.target.checked ? '' : 'none'; });
+
+  // WhatsApp links
+  qs('#waContact').href = buildWhatsAppLink('201002717039');
+  qs('#waFooter').href = buildWhatsAppLink('201002717039');
+  qs('#waBottom').href = buildWhatsAppLink('201002717039');
+
+  // Populate grids and checklists
+  renderServices();
+  renderContractServices('#contractServices', 'contract');
+  renderContractServices('#bookingServices', 'booking');
+  loadCustomerToContract();
+
+  // Update totals on selection
+  document.addEventListener('change', (e)=>{
+    if (e.target && e.target.name === 'contract') updateContractTotals();
+    if (e.target && e.target.name === 'booking') updateBookingTotals();
+  });
+
+  // Save & Email from Contract
+  qs('#saveCustomer').addEventListener('click', saveCustomerFromContract);
+  qs('#emailOrder').addEventListener('click', ()=>{
+    const ids = selectedServiceIds('contract');
+    const store = saveCustomerFromContract();
+    if (!ids.length) { toast('Please select at least one service'); return; }
+    const link = buildOrderEmail({ ids, schedule: null, notes: '', customer: {
+      name: store.custName, phone: store.custPhone, email: store.custEmail, address: store.custAddress,
+      isBusiness: store.isBusiness, business: store.businessName
+    }});
+    location.href = link;
+  });
+  qs('#downloadPdf').addEventListener('click', ()=>{
+    const ids = selectedServiceIds('contract');
+    const store = saveCustomerFromContract();
+    if (!ids.length) { toast('Please select at least one service'); return; }
+    generateSimplePDF({ ids, schedule: null, notes: '', customer: {
+      name: store.custName, phone: store.custPhone, email: store.custEmail, address: store.custAddress,
+      isBusiness: store.isBusiness, business: store.businessName
+    }});
+  });
+
+  // Book Now button auto-select
+  document.addEventListener('click', (e)=>{
+    const btn = e.target.closest('.book-btn');
+    if (!btn) return;
+    const id = btn.getAttribute('data-service-id');
+    // Open modal and select the service
+    openModal();
+    const box = qs(`#bookingServices input[value="${CSS.escape(id)}"]`);
+    if (box) { box.checked = true; updateBookingTotals(); }
+  });
+
+  // Confirm actions in modal
+  qs('#bEmail').addEventListener('click', ()=>{
+    const ids = selectedServiceIds('booking');
+    if (!ids.length) { toast('Select at least one service'); setStep(1); return; }
+    const customer = getCustomerMerged();
+    if (!customer.name || !customer.phone) { toast('Enter name & phone'); setStep(2); return; }
+    const schedule = { date: qs('#bDate').value, time: qs('#bTime').value };
+    const link = buildOrderEmail({ ids, schedule, notes: qs('#bNotes').value, customer });
+    location.href = link;
+  });
+  qs('#bDownloadPdf').addEventListener('click', ()=>{
+    const ids = selectedServiceIds('booking');
+    if (!ids.length) { toast('Select at least one service'); setStep(1); return; }
+    const customer = getCustomerMerged();
+    const schedule = { date: qs('#bDate').value, time: qs('#bTime').value };
+    generateSimplePDF({ ids, schedule, notes: qs('#bNotes').value, customer });
+  });
+
+  // ========================
+  // Floating call button
+  // ========================
+  qs('#callPulse').addEventListener('click', ()=> location.href = 'tel:01002717039');
+
+  // ========================
+  // Toast helper
+  // ========================
+  let toastTimer;
+  function toast(message) {
+    const t = qs('#toast'); t.textContent = message; t.style.display = 'block'; clearTimeout(toastTimer); toastTimer = setTimeout(()=> t.style.display='none', 2600);
+  }
+
+  // ========================
+  // Pop-up Notice control
+  // ========================
+  const noticeKey = 'montsina_notice_dismissed';
+  function showNoticeOnce() { if (!localStorage.getItem(noticeKey)) { qs('#notice').style.display = 'block'; } }
+  qs('#hideNotice').addEventListener('click', ()=>{ qs('#notice').style.display = 'none'; localStorage.setItem(noticeKey, '1'); });
+  setTimeout(showNoticeOnce, 1000);
+
+  // ========================
+  // PWA: Manifest & Service Worker (single-file)
+  // ========================
+  let deferredPrompt = null;
+  const installBtn = qs('#installBtn');
+  const installBtnFooter = qs('#installBtnFooter');
+
+  // Generate icons from SVG onto canvas to get PNG data URLs
+  function generateIconPngDataUrl(size) {
+    const svg = `<?xml version="1.0"?><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' width='64' height='64'>
+      <rect x='2' y='2' width='60' height='60' rx='12' ry='12' fill='%230d0d0d' stroke='%23d1e2ff' stroke-width='2'/>
+      <path d='M8 44 L22 26 L32 36 L42 22 L56 44' fill='none' stroke='%231c4b92' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/>
+      <path d='M10 50 Q24 46 38 50 Q52 54 58 50' fill='none' stroke='%23ffffff' stroke-opacity='0.7' stroke-width='2'/>
+      <text x='14' y='22' font-size='10' fill='%23d1e2ff' font-family='Arial, Helvetica, sans-serif'>MS</text>
+    </svg>`;
+    const img = new Image();
+    return new Promise(resolve => {
+      img.onload = () => {
+        const canvas = document.createElement('canvas'); canvas.width = size; canvas.height = size; const ctx = canvas.getContext('2d');
+        ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--bg') || '#0d0d0d';
+        ctx.fillRect(0,0,size,size);
+        ctx.drawImage(img, 0, 0, size, size);
+        resolve(canvas.toDataURL('image/png'));
+      };
+      img.src = 'data:image/svg+xml;utf8,' + encode(svg);
+    });
+  }
+
+  async function attachManifest() {
+    const icon192 = await generateIconPngDataUrl(192);
+    const icon512 = await generateIconPngDataUrl(512);
+    const manifest = {
+      name: 'MontSina HVAC',
+      short_name: 'MontSina',
+      start_url: '.',
+      display: 'standalone',
+      background_color: '#0d0d0d',
+      theme_color: '#0d0d0d',
+      description: 'Premium HVAC services across KSA. 24/7 availability.',
+      categories: ['business','utilities','productivity'],
+      icons: [
+        { src: icon192, sizes: '192x192', type: 'image/png' },
+        { src: icon512, sizes: '512x512', type: 'image/png' }
+      ]
+    };
+    const blob = new Blob([JSON.stringify(manifest)], {type:'application/manifest+json'});
+    const link = document.createElement('link'); link.rel = 'manifest'; link.href = URL.createObjectURL(blob);
+    document.head.appendChild(link);
+  }
+  attachManifest();
+
+  // Service Worker (inline via blob)
+  async function registerSW() {
+    if (!('serviceWorker' in navigator)) return;
+    const swCode = `
+      const CACHE = 'montsina-cache-v1';
+      self.addEventListener('install', event => {
+        self.skipWaiting();
+        event.waitUntil(caches.open(CACHE));
+      });
+      self.addEventListener('activate', event => { event.waitUntil(self.clients.claim()); });
+      self.addEventListener('fetch', event => {
+        const req = event.request;
+        if (req.method !== 'GET') return;
+        event.respondWith(
+          caches.match(req).then(cached => {
+            const fetchPromise = fetch(req).then(networkRes => {
+              try { const copy = networkRes.clone(); caches.open(CACHE).then(c => c.put(req, copy)); } catch (e) {}
+              return networkRes;
+            }).catch(()=> cached);
+            return cached || fetchPromise;
+          })
+        );
+      });
+    `;
+    const blob = new Blob([swCode], {type: 'text/javascript'});
+    const url = URL.createObjectURL(blob);
+    try { await navigator.serviceWorker.register(url); } catch (e) { console.warn('SW registration failed', e); }
+  }
+  registerSW();
+
+  // Install prompt handling
+  function showInstallButtons(show) { [installBtn, installBtnFooter].forEach(b=> b && (b.style.display = show ? '' : 'none')); }
+  window.addEventListener('beforeinstallprompt', (e) => {
+    if (localStorage.getItem('montsina_installed') === '1') return;
+    e.preventDefault();
+    deferredPrompt = e;
+    showInstallButtons(true);
+    toast('App is ready to install. Tap "Get App".');
+  });
+  window.addEventListener('appinstalled', () => { localStorage.setItem('montsina_installed','1'); showInstallButtons(false); deferredPrompt=null; });
+  showInstallButtons(localStorage.getItem('montsina_installed') !== '1' && !!deferredPrompt);
+
+  async function requestInstall() {
+    // Ask Notification permission as requested, but only once
+    if (Notification && Notification.permission === 'default') {
+      try { await Notification.requestPermission(); } catch (e) {}
+    }
+    if (!deferredPrompt) { toast('Install prompt not available yet'); return; }
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === 'accepted') { showInstallButtons(false); }
+    deferredPrompt = null;
+  }
+  [installBtn, installBtnFooter].forEach(b=> b && b.addEventListener('click', requestInstall));
+
+  // ========================
+  // Pre-fill booking with saved info
+  // ========================
+  (function prefillBooking() {
+    const store = JSON.parse(localStorage.getItem('montsina_customer') || '{}');
+    if (!store) return;
+    qs('#bName').value = store.custName || '';
+    qs('#bPhone').value = store.custPhone || '';
+    qs('#bEmail').value = store.custEmail || '';
+    qs('#bAddress').value = store.custAddress || '';
+    qs('#bIsBusiness').checked = !!store.isBusiness;
+    qs('#bBusiness').value = store.businessName || '';
+    qs('#bBusinessRow').style.display = store.isBusiness ? '' : 'none';
+  })();
+
+  // Accessibility improvement: close modal on Escape
+  document.addEventListener('keydown', (e)=>{ if (e.key === 'Escape') closeModal(); });
+  </script>
+</body>
+</html>
+
